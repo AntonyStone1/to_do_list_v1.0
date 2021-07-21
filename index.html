@@ -8,38 +8,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Todo list</title>
 </head>
 <body>
-    <header>
-        <h1>Ed's Todo List</h1>
-    </header>    
-    <form>
-        <input type="text" class="todo-input">
-        <button class="todo-button" type="submit"><i class="fas fa-plus-square"></i>
-        </button>
-        <div class="select-state">
-            <select name="todos" class="filter-todo">
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="uncompleted">Uncompleted</option>
-            </select>
-        </div>
-        <div class="select-category">
-            <select name="categories" id="" class="filter-category">
-                <option value="personal">Personal</option>
-                <option value="work">Work</option>
-                <option value="purchases">Purchases</option>
-                <option value="daily_tasks">Daly tasks</option>
-            </select>
+    <div class="container">
+        <header>
+            <h1>Ed's Todo List</h1>
+        </header>    
+        <form>
+            <input type="text" class="todo-input">
+            <button class="todo-button" type="submit"><i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select-state">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+            <div class="select-category">
+                <select name="categories" id="" class="filter-category">
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                    <option value="purchases">Purchases</option>
+                    <option value="daily_tasks">Daly tasks</option>
+                </select>
+            </div>
+            <div class="toggletheme">
+                <button class="theme-btn">Switch</button>
+            </div>
+        </form>
+        
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
         </div>
         
-    </form>
-    <div class="todo-container">
-        <ul class="todo-list"></ul>
+        
     </div>
     
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

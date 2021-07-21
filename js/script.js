@@ -55,7 +55,6 @@ function addTodo(event) {
 
 function deleteCheck(e) {
     const item = e.target;
-    console.log(item);
     //DELETE TODO
     if (item.classList[0] === 'trash-button') {
         const todo = item.parentElement;
@@ -78,8 +77,6 @@ function deleteCheck(e) {
 function filterTodoState(e) {
     const todos = todoList.childNodes;
     todos.forEach(function (todo) {
-        console.log(todo);
-
         switch (e.target.value) {
             case "all":
                 todo.style.display = "flex";
